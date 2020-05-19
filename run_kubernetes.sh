@@ -10,7 +10,7 @@ dockerpath=ikdunby/app
 # Run a Docker Hub container with kubernetes
 kubectl run prediction-app-pod\
     --generator=run-pod/v1\
-    --image=ikdunby/app\
+    --image=$dockerpath\
     --port=80 --labels app=pred-app-pod
 
 
